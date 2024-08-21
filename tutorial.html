@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="styles/tutorial.css" />
+  </head>
+
+  <body>
+    <h1 class="main-title">Tutorial</h1>
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 6</h1>
+        <section id="description">
+          <p>In the previous project, you learned how to work with variables and the <code>let</code> keyword like this:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> camperbot<span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>You also learned how to initialize a variable with a value like this:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 15</h1>
+        <section id="description">
+          <p>JavaScript interacts with the HTML using the <dfn>Document Object Model</dfn>, or DOM. The DOM is a tree of objects that represents the HTML. You can access the HTML using the <code>document</code> object, which represents your entire HTML document.</p>
+          <p>One method for finding specific elements in your HTML is using the <code>querySelector()</code> method. The <code>querySelector()</code> method takes a CSS selector as an argument and returns the first element that matches that selector. For example, to find the <code>&lt;h1&gt;</code> element in your HTML, you would write:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> h1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"h1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>Note that <code>h1</code> is a string and matches the CSS selector you would use.</p>
+          <p>Create a <code>button1</code> variable and use <code>querySelector()</code> to assign it your element with the <code>id</code> of <code>button1</code>. Remember that CSS <code>id</code> selectors are prefixed with a <code>#</code>.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 17</h1>
+        <section id="description">
+          <p><code>button1</code> is a variable that is not going to be reassigned. If you are not going to assign a new value to a variable, it is best practice to use the <code>const</code> keyword to declare it instead of the <code>let</code> keyword. This will tell JavaScript to throw an error if you accidentally reassign it.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 36</h1>
+        <section id="description">
+          <p><code>button1</code> represents your first <code>button</code> element. These elements have a special property called <code>onclick</code>, which you can use to determine what happens when someone clicks that button.</p>
+          <p>You can access properties in JavaScript a couple of different ways. The first is with <dfn>dot notation</dfn>. Here is an example of using dot notation to set the <code>onclick</code> property of a button to a function reference.</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">button<span class="token punctuation">.</span>onclick <span class="token operator">=</span> myFunction<span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>In this example, <code>button</code> is the button element, and <code>myFunction</code> is a reference to a function. When the button is clicked, <code>myFunction</code> will be called.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 38</h1>
+        <section id="description">
+          <p>The <code>innerText</code> property controls the text that appears in an HTML element. For example:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-html" tabindex="0" role="region" aria-label="HTML code example"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Demo content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span> </code></pre>
+          </details>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> info <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#info"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <br />info<span class="token punctuation">.</span>innerText <span class="token operator">=</span> <span class="token string">"Hello World"</span><span class="token punctuation">;</span> </code></pre>
+          </details>
+          <p>The following example would change the text of the <code>p</code> element from <code>Demo content</code> to <code>Hello World</code>.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 46</h1>
+        <section id="description">
+          <p>You have repetition in the <code>goTown</code> and <code>goStore</code> functions. Repetition in your code is a sign that you need another function.</p>
+          <p>In the previous project, you learned how to work with function parameters like this:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">function</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token parameter">param</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+          </details>
+          <p>Function parameters act as placeholders for values that you pass to the function when you call it.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 48</h1>
+        <section id="description">
+          <p>Before you can begin to build out your <code>locations</code> array, you will first need to learn about <df>objects. Objects are an important data type in JavaScript. The next few steps will be dedicated to learning about them so you will better understand how to apply them in your project.</df></p>
+          <p>Objects are non primitive data types that store key-value pairs. Non primitive data types are mutable data types that are not <code>undefined</code>, <code>null</code>, <code>boolean</code>, <code>number</code>, <code>string</code>, or <code>symbol</code>. Mutable means that the data can be changed after it is created.</p>
+          <p>Here is the basic syntax for an object:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token punctuation">{</span><br /> <span class="token literal-property property">key</span><span class="token operator">:</span> value<br /><span class="token punctuation">}</span></code></pre>
+          </details>
+          <p>For now, create a <code>const</code> variable called <code>cat</code> and assign it an empty object <code>{}</code>.</p>
+          <p>Below that <code>cat</code> variable, add a <code>console.log(cat)</code> statement to see the object in the console.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 49</h1>
+        <section id="description">
+          <p>Objects are similar to <code>arrays</code>, except that instead of using indexes to access and modify their data, you access the data in objects through <code>properties</code>.</p>
+          <p>Properties consist of a key and a value. The key is the name of the property, and the value is the data stored in the property.</p>
+          <p>Here is an example of an object with a single property:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><br /> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Quincy Larson"</span><br /><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>Inside your <code>cat</code> object, add a new property. The key should be <code>name</code> and the value should be the string <code>"Whiskers"</code>.</p>
+          <p>Open up the console to see the updates to your object.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 50</h1>
+        <section id="description">
+          <p>If the property name (key) of an object has a space in it, you will need to use single or double quotes around the name.</p>
+          <p>Here is an example of an object with a property name that has a space:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> spaceObj <span class="token operator">=</span> <span class="token punctuation">{</span><br /> <span class="token string-property property">"Space Name"</span><span class="token operator">:</span> <span class="token string">"Kirk"</span><span class="token punctuation">,</span><br /><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>If you tried to write a key without the quotes, it would throw an error:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> spaceObj <span class="token operator">=</span> <span class="token punctuation">{</span><br /> <span class="token comment">// Throws an error</span><br /> Space Name<span class="token operator">:</span> <span class="token string">"Kirk"</span><span class="token punctuation">,</span><br /><span class="token punctuation">}</span><span class="token punctuation">;</span> </code></pre>
+          </details>
+          <p>Add a new property with a key of <code>"Number of legs"</code> and value of <code>4</code> to the <code>cat</code> object.</p>
+          <p>Open up the console to see the output.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 51</h1>
+        <section id="description">
+          <p>There are two ways to access the properties of an object: dot notation (<code>.</code>) and bracket notation (<code>[]</code>), similar to an array.</p>
+          <p>Dot notation is what you use when you know the name of the property you're trying to access ahead of time.</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">object<span class="token punctuation">.</span>property<span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>Here is a sample of using dot notation (<code>.</code>) to read the <code>name</code> property of the <code>developer</code> object:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> developer <span class="token operator">=</span> <span class="token punctuation">{</span><br /> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Jessica"</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><br /><span class="token comment">// Output: Jessica</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>developer<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>Update your console statement to access the <code>name</code> property of the <code>cat</code> object using dot notation.</p>
+          <p>Open up the console to see the <code>name</code> of <code>"Whiskers"</code> logged to the console.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 52</h1>
+        <section id="description">
+          <p>The second way to access the properties of an object is bracket notation (<code>[]</code>). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">objectName<span class="token punctuation">[</span><span class="token string">"property name"</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>Here is a sample of using bracket notation to read an object's property:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> spaceObj <span class="token operator">=</span> <span class="token punctuation">{</span><br /> <span class="token string-property property">"Space Name"</span><span class="token operator">:</span> <span class="token string">"Kirk"</span><span class="token punctuation">,</span><br /><span class="token punctuation">}</span><span class="token punctuation">;</span><br /><br />spaceObj<span class="token punctuation">[</span><span class="token string">"Space Name"</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// "Kirk"</span></code></pre>
+          </details>
+          <p>Update your console statement to use bracket notation to access the property <code>"Number of legs"</code> of the <code>cat</code> object.</p>
+          <p>Open up the console to see the output.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 63</h1>
+        <section id="description">
+          <p>The <code>locations</code> array contains two locations: the <code>"town square"</code> and the <code>"store"</code>. Currently you are passing that entire array into the <code>update</code> function.</p>
+          <p>Pass in only the first element of the <code>locations</code> array by adding <code>[0]</code> at the end of the variable. For example: <code>myFunction(arg[0]);</code>.</p>
+          <p>This is called <dfn>bracket notation</dfn>. Values in an array are accessed by index. Indices are numerical values and start at <code>0</code> - this is called zero-based indexing. <code>arg[0]</code> would be the first element in the <code>arg</code> array.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 77</h1>
+        <section id="description">
+          <p>What if the player doesn't have enough gold to buy health? You should use an <code>if</code> statement to check if the player has enough gold to buy health.</p>
+          <p>In the previous project, you learned how to work with <code>if</code> statements like this:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> num <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span><br /> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"This code will run because num is greater than or equal to 3."</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> <span class="token punctuation">}</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 88</h1>
+        <section id="description">
+          <p>Use bracket notation to access an object within the <code>weapons</code> array and assign it to your <code>newWeapon</code> variable. Place the variable <code>currentWeaponIndex</code> within the brackets.</p>
+          <p><mark>When you use a variable in bracket notation, you are accessing the property or index by the <em>value</em> of that variable.</mark></p>
+          <p>For example, this code uses the <code>index</code> variable to access a value of <code>array</code>.</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> value <span class="token operator">=</span> array<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 89</h1>
+        <section id="description">
+          <p><code>weapons[currentWeaponIndex]</code> is an object. Use dot notation to get the <code>name</code> property of that object.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 98</h1>
+        <section id="description">
+          <p>When you were testing your function, you should have seen an error message in the console. This error is due to the condition in the <code>buyWeapon</code> function.</p>
+          <p>The <code>currentWeaponIndex</code> variable is the index of the <code>weapons</code> array, but array indexing starts at zero. The index of the last element in an array is one less than the length of the array.</p>
+          <p>Change the <code>if</code> condition to check <code>weapons.length - 1</code>, instead of <code>weapons.length</code>.</p>
+          <p>Test out your <code>buyWeapon</code> function again to see the error message disappear.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 105</h1>
+        <section id="description">
+          <p>The next step is to create a variable called <code>currentWeapon</code>.</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary><pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br /> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />  <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// this num is scoped to the if statement</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// expected output: 2</span><br /> <span class="token punctuation">}</span><br /><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// expected output: 1 (the global variable)</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 106</h1>
+        <section id="description">
+          <p>In the previous project, you learned how to work with the <code>shift()</code> method to remove the first element from an array like this:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> myArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"first"</span><span class="token punctuation">,</span> <span class="token string">"second"</span><span class="token punctuation">,</span> <span class="token string">"third"</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br /><span class="token keyword">const</span> firstElement <span class="token operator">=</span> myArray<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token comment">// myArray is now ["second", "third"]</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 124</h1>
+        <section id="description">
+          <p>The <code>Math</code> object in JavaScript contains static properties and methods for mathematical constants and functions. One of those is <code>Math.random()</code>, which generates a random number from <code>0</code> (inclusive) to <code>1</code> (exclusive). Another is <code>Math.floor()</code>, which rounds a given number down to the nearest integer.</p>
+          <p>Using these, you can generate a random number within a range. For example, this generates a random number between <code>1</code> and <code>5</code>: <code>Math.floor(Math.random() * 5) + 1;</code>.</p>
+          <p>Following this pattern, use the addition operator (<code>+</code>) to add a random number between <code>1</code> and the value of <code>xp</code> to your <code>monsterHealth -= weapons[currentWeaponIndex].power</code>.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 133</h1>
+        <section id="description">
+          <p>Finish the <code>defeatMonster</code> function by calling the <code>update</code> function with <code>locations[4]</code> as the argument.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 141</h1>
+        <section id="description">
+          <p>In order for the <code>&amp;#x2620;</code> emoticon text to properly display on the page, you will need to use the <dfn>innerHTML</dfn> property.</p>
+          <p>The <code>innerHTML</code> property allows you to access or modify the content inside an HTML element using JavaScript.</p>
+          <p>Here is an example of updating the content for this paragraph element using the <code>innerHTML</code>  property.</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-html" tabindex="0" role="region" aria-label="HTML code example"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>demo<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a paragraph.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+          </details>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#demo"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">"Hello, innerHTML!"</span><span class="token punctuation">;</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 149</h1>
+        <section id="description">
+          <p>If you play the game in its current state you might notice a bug. If your <code>xp</code> is high enough, the <code>getMonsterAttackValue</code> function will return a negative number, which will actually add to your total health when fighting a monster! You can fix this issue by using a <dfn>ternary operator</dfn> to ensure negative values are not returned.</p>
+          <p>The <code>ternary operator</code> is a conditional operator and can be used as a one-line <code>if-else</code> statement. The syntax is: <code>condition ? expressionIfTrue : expressionIfFalse</code>.</p>
+          <p>Here is an example of returning a value using an <code>if-else</code> statement and a refactored example using a ternary operator:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token comment">// if-else statement</span><br /> <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />  <span class="token keyword">return</span> score<br /> <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br />  <span class="token keyword">return</span> default_score<br /> <span class="token punctuation">}</span><br /><br /><span class="token comment">// ternary operator</span><br /><span class="token keyword">return</span> score <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">?</span> score <span class="token operator">:</span> default_score</code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 153</h1>
+        <section id="description">
+          <p>The player should hit if either <code>Math.random() &gt; .2</code> <strong>or</strong> if the player's health is less than <code>20</code>.</p>
+          <p>At the end of your <code>return</code> statement, use the <dfn>logical OR</dfn> operator <code>||</code> and check if <code>health</code> is less than <code>20</code>.</p>
+          <p>The logical OR operator will use the first value if it is truthy – that is, anything apart from <code>NaN</code>, <code>null</code>, <code>undefined</code>, <code>0</code>, <code>-0</code>, <code>0n</code>, <code>""</code>, and <code>false</code>. Otherwise, it will use the second value.</p>
+          <p>For example: <code>num &lt; 10 || num &gt; 20</code>.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 167</h1>
+        <section id="description">
+          <p>In the previous project, you learned how to work with <code>for</code> loops like this:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token comment">// code to run</span><br /><span class="token punctuation">}</span></code></pre>
+          </details>
+          <p><code>for</code> loops are declared with three expressions separated by semicolons: <code>for (a; b; c)</code>, where <code>a</code> is the initialization expression, <code>b</code> is the condition, and <code>c</code> is the final expression.</p>
+          <p>In this step, create a <code>for</code> loop where <code>i</code> is initialized to <code>0</code>, the loop runs as long as <code>i</code> is less than <code>10</code>, and <code>i</code> is incremented by <code>1</code> after each iteration using the increment operator <code>++</code>.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <div id="content-start">
+        <h1>Step 169</h1>
+        <section id="description">
+          <p>The <code>.includes()</code> method determines if an array contains an element and will return either <code>true</code> or <code>false</code>.</p>
+          <p>Here is an example of the <code>.includes()</code> syntax:</p>
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> numbersArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><br /><span class="token keyword">const</span> number <span class="token operator">=</span> <span class="token number">3</span><br /><br /><span class="token keyword">if</span> <span class="token punctuation">(</span>numbersArray<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The number is in the array."</span><span class="token punctuation">)</span><br /><span class="token punctuation">}</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
