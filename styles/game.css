@@ -43,3 +43,28 @@ button {
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
 }
+
+.tutorial {
+  background-color: white;
+  margin: 30px auto 0px;
+  max-width: 500px;
+  padding: 8px;
+  text-align: center;
+}
+
+.tutorial button a:link,
+.tutorial button a:visited {
+  color: black;
+}
+
+.tutorial a::after {
+  display: inline-block;
+  background-image: url('../arrow-up-right-from-square-solid.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  height: 14px;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 14px;
+}
