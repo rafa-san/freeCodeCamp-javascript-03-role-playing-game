@@ -6,7 +6,7 @@
 Criar um jogo de RPG chamado *Dragon Repeller*, aplicando conceitos fundamentais de JavaScript.
 
 ## 2️⃣ Descrição
-Este é o terceiro curso da trilha *JavaScript Algorithms and Data Structures Certification*.
+Este é o terceiro curso da trilha **JavaScript Algorithms and Data Structures Certification**.
 
 O projeto reforça habilidades essenciais, como:
 
@@ -18,10 +18,10 @@ O projeto reforça habilidades essenciais, como:
 - Loops;
 - Condicionais.
 
-Uma atividade divertida e prática para consolidar o aprendizado de lógica de programação!
+Mais uma atividade divertida e prática para consolidar o aprendizado de lógica de programação!
 
 ## 3️⃣ Principais Modificações
-Criei uma página HTML para registrar informações importantes do curso e também uma página de estilo para personalizá-la.
+Criei uma página HTML para registrar informações importantes do tutorial e um arquivo CSS para personalizá-la.
 
 ## 4️⃣ Tecnologias Utilizadas
 
@@ -36,7 +36,7 @@ Criei uma página HTML para registrar informações importantes do curso e tamb�
 </div>
 
 ## 5️⃣ Créditos
-Agradeço ao freeCodeCamp por oferecer cursos gratuitos de altíssima qualidade, que não apenas ampliaram meus conhecimentos, mas também contribuíram muito para a construção do meu portfólio.
+Agradeço ao **freeCodeCamp** por oferecer cursos gratuitos de altíssima qualidade, que não apenas ampliaram meus conhecimentos, mas também contribuíram muito para a construção do meu portfólio.
 - <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp 🔗</a>
 
 ## 6️⃣ Licença
